@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 2% 0;
+}
+
+.subclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 60vh;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.subclass a{
+    background-color: #024FED;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 3%;
+    padding: 2% 5%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.subclass a:hover{
+    background-color: #ffffff;
+    color: #024FED;
+    border: 2px solid #024FED;
+}
+
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    max-width: 100%;
+    transition: height 0.2s ease;
+}
+
+.form{
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 20px;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
+    transition: margin-left 0.18s ease;
+}
+
+
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :hover){
+    border-bottom-color: #024FED;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1rem;
+}
+
+.input-field input:is(:focus, :hover) ~ i{
+    color: #024FED;
+}
+
+
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.show-hide{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.form .text{
+    color: #333;
+    font-size: 0.8rem;
+}
+
+.form a.text{
+    color: #024FED;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form a:hover{
+    text-decoration: underline;
+    border: none;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #024FED;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #0045cf;
+}
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.field .error{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.7rem;
+    margin-bottom: 0px;
+    color: #999;
+}
+
+.form .field p{
+   margin-bottom: 0px;
+   padding-bottom: 0;
+}
+
+.success-msg p{
+    width: 100%;
+    font-size: 0.8rem;
+	margin: 1% 0;
+	padding: 1% 0;
+    color: #4F8A10;
+}
+
+.error-msg p{
+    width: 100%;
+    font-size: 0.8rem;
+	margin: 1% 0;
+	padding: 0;
+    color: #D63301;
+}
